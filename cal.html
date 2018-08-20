@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css"s href="style.css" />
+    <script src="logic.js"></script>
+</head>
+<body onload="SetNull()">
+  <main>
+      <section class="calculator">
+         <section class="calculation-screen">
+            <form name="screenform">
+                <div id="viewer" class="viewer">
+                 
+                </div>
+            </form>
+         </section>
+         <section >
+            <input class="input-string" id="S-input" type="text" placeholder="Enter the values as a string">
+         </section>
+         <section class="buttons">
+            <div class="numberFields">
+                <button onclick="Numbers(1)">1</button>
+                <button onclick="Numbers(2)">2</button>
+                <button onclick="Numbers(3)">3</button>
+                <button onclick="Numbers('+')">+</button>
+                <button onclick="Numbers(4)">4</button>
+                <button onclick="Numbers(5)">5</button>
+                <button onclick="Numbers(6)">6</button>
+                <button onclick="Numbers('-')">-</button>
+                <button onclick="Numbers(7)">7</button>
+                <button onclick="Numbers(8)">8</button>
+                <button onclick="Numbers(9)">9</button>
+                <button onclick="Numbers('*')">*</button>
+                <button onclick="Numbers(0)">0</button>
+                <button onclick="Numbers('.')">.</button>
+                <button onclick="SetNull()">clr</button>
+                <button onclick="Numbers('/')">/</button>
+                <button id="equals" onclick="Result()">=</button>
+            </div>
+         </section>
+      </section>
+  </main>
+</body>
+</html>
